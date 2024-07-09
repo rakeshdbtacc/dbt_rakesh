@@ -6,6 +6,6 @@
 }}
 
 
-select id as order_id ,
-        first_name as cust_name1 ,
-        last_name as cust_name_2 from {{ source('jaffle_shop', 'customers') }}
+select id  as customer_id,
+        first_name ,
+        last_name  from {{ source('jaffle_shop', 'customers') }}
